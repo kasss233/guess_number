@@ -1,0 +1,35 @@
+[gd_scene load_steps=3 format=3 uid="uid://cmimqksnf1fcm"]
+
+[ext_resource type="Script" uid="uid://lby23uhqw7dc" path="res://right.gd" id="1_p4oks"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_ejgnx"]
+font_size = 50
+
+[node name="right" type="Node2D"]
+script = ExtResource("1_p4oks")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 422.0
+offset_top = 214.0
+offset_right = 1372.0
+offset_bottom = 569.0
+text = "恭喜你猜对了"
+label_settings = SubResource("LabelSettings_ejgnx")
+
+[node name="Button" type="Button" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 464.0
+offset_top = 423.0
+offset_right = 672.0
+offset_bottom = 526.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 50
+text = "再来一次"
+
+[connection signal="button_down" from="Button" to="." method="_on_button_button_down"]

@@ -1,0 +1,21 @@
+[gd_resource type="Theme" load_steps=5 format=3 uid="uid://b7wfswevjqmrd"]
+
+[ext_resource type="FontFile" uid="uid://c3j66c6d2j2qx" path="res://re/AaHuanMengKongJianXiangSuTi-2.ttf" id="1_mu1us"]
+[ext_resource type="Texture2D" uid="uid://bvgioyo2riigk" path="res://re/buttons/Square Buttons 26x19.png" id="1_ukhgj"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_xjoco"]
+texture = ExtResource("1_ukhgj")
+region_rect = Rect2(10.7818, 70, 26.2182, 19.2315)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_chgmo"]
+texture = ExtResource("1_ukhgj")
+region_rect = Rect2(59, 71, 26, 18)
+
+[resource]
+Button/colors/font_color = Color(0.0861643, 0.0764625, 0.0942322, 1)
+Button/font_sizes/font_size = 42
+Button/fonts/font = ExtResource("1_mu1us")
+Button/styles/focus = SubResource("StyleBoxTexture_xjoco")
+Button/styles/hover = SubResource("StyleBoxTexture_xjoco")
+Button/styles/normal = SubResource("StyleBoxTexture_xjoco")
+Button/styles/pressed = SubResource("StyleBoxTexture_chgmo")
